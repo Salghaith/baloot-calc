@@ -62,104 +62,360 @@ class _Bloot extends State<Bloot> {
             gradient: LinearGradient(
                 colors: [Color.fromARGB(255, 8, 76, 155), Colors.white]),
           ),
-          child: Center(
+          child: Container(
+            decoration:
+                const BoxDecoration(color: Color.fromARGB(255, 198, 194, 194)),
             child: Column(
               children: [
                 const SizedBox(
-                  height: 70,
-                ),
-                const Text(
-                  "حاسبة بلوت رخيصة",
-                  style: TextStyle(color: Colors.black, fontSize: 40),
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                Row(
-                  children: [
-                    const SizedBox(
-                      width: 30,
-                    ),
-                    SizedBox(
-                      width: 150,
-                      child: TextField(
-                        controller: _controller1,
-                        decoration: const InputDecoration(
-                          labelText: "1st team score!",
-                          labelStyle: TextStyle(
-                              color: Color.fromARGB(90, 0, 0, 0), fontSize: 30),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 60,
-                    ),
-                    SizedBox(
-                      width: 150,
-                      child: TextField(
-                        controller: _controller2,
-                        decoration: const InputDecoration(
-                          labelText: "2nd team score!",
-                          labelStyle: TextStyle(
-                              color: Color.fromARGB(90, 0, 0, 0), fontSize: 30),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(
                   height: 60,
                 ),
-                SizedBox(
-                  height: 300,
-                  child: Row(
-                    children: [
-                      const SizedBox(
-                        width: 150,
-                        // height: 300,
-
-                        child: Text(
-                          "50\n5\n5\n5\n5\n5\n5\n5\n5",
-                          style: const TextStyle(
-                              color: Colors.black, fontSize: 40),
-                        ),
+                Container(
+                  height: 250,
+                  decoration: const BoxDecoration(
+                      // color: Colors.brown,
                       ),
-                      SizedBox(
-                        width: 100,
-                        height: 100,
-                        child: TextButton(
-                          onPressed: score,
-                          style: TextButton.styleFrom(
-                            backgroundColor: Colors.grey,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Column(
+                        children: [
+                          const SizedBox(
+                            height: 20,
                           ),
-                          child: const Text(
-                            "قيد",
-                            style: TextStyle(fontSize: 40, color: Colors.black),
+                          const Text(
+                            "لنا",
+                            style: TextStyle(
+                              fontSize: 30,
+                            ),
                           ),
-                        ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            height: 80,
+                            width: 80,
+                            decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(1000)),
+                            ),
+                            child: const Center(
+                              child: Text(
+                                "11",
+                                style: TextStyle(
+                                  fontSize: 30,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 40,
+                          ),
+                          Container(
+                            height: 40,
+                            width: 80,
+                            decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(12)),
+                            ),
+                            child: const Center(
+                              child: Text(
+                                "122",
+                                style: TextStyle(
+                                  fontSize: 30,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 60),
+                                child: Image.asset(
+                                  "assets/images/sa.png",
+                                  width: 60,
+                                  height: 60,
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.only(right: 50),
+                                child: TextButton(
+                                  onPressed: () {},
+                                  style: TextButton.styleFrom(
+                                    backgroundColor: Colors.white,
+                                    shape: const CircleBorder(),
+                                  ),
+                                  child: const Text(
+                                    "26",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                style: TextButton.styleFrom(
+                                  backgroundColor: Colors.white,
+                                  shape: const CircleBorder(),
+                                ),
+                                child: const Text(
+                                  "26",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 25,
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.only(right: 50),
+                                child: TextButton(
+                                  onPressed: () {},
+                                  style: TextButton.styleFrom(
+                                    backgroundColor: Colors.white,
+                                    shape: const CircleBorder(),
+                                  ),
+                                  child: const Text(
+                                    "16",
+                                    style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                style: TextButton.styleFrom(
+                                  backgroundColor: Colors.white,
+                                  shape: const CircleBorder(),
+                                ),
+                                child: const Text(
+                                  "16",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 19,
+                          ),
+                          OutlinedButton.icon(
+                            onPressed: () {},
+                            icon: const Icon(
+                              Icons.add,
+                              color: Colors.black,
+                              size: 50,
+                            ),
+                            label: const Text(
+                              "قيد",
+                              style: TextStyle(
+                                fontSize: 30,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          const Text(
+                            "لهم",
+                            style: TextStyle(
+                              fontSize: 30,
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 20,
+                          ),
+                          Container(
+                            height: 80,
+                            width: 80,
+                            decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(1000)),
+                            ),
+                            child: const Center(
+                              child: Text(
+                                "112",
+                                style: TextStyle(
+                                  fontSize: 30,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            height: 40,
+                          ),
+                          Container(
+                            height: 40,
+                            width: 80,
+                            decoration: const BoxDecoration(
+                              color: Colors.white,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(12)),
+                            ),
+                            child: const Center(
+                              child: Text(
+                                "122",
+                                style: TextStyle(
+                                  fontSize: 30,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
-                Text(
-                  "1st:$x1 - 2nd:$x2",
-                  style: const TextStyle(color: Colors.black, fontSize: 40),
+                const SizedBox(
+                  height: 10,
+                ),
+                //Break
+                Container(
+                  height: 440,
+                  decoration: const BoxDecoration(
+                      // color: Colors.green,
+                      ),
+                  child: SingleChildScrollView(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Column(
+                          children: [
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              "70\n30\n70\n30\n70\n30\n70\n30\n70\n30",
+                              style: TextStyle(
+                                fontSize: 30,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.symmetric(
+                                  horizontal: 60, vertical: 30),
+                              width: 1,
+                              height: 380,
+                              color: Colors.black,
+                            ),
+                          ],
+                        ),
+                        const Column(
+                          children: [
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              "70\n30\n70\n30\n70\n30\n70\n30\n70\n30",
+                              style: TextStyle(
+                                fontSize: 30,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
                 const SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
-                SizedBox(
-                  width: 100,
-                  height: 100,
-                  child: TextButton(
-                    onPressed: reset,
-                    style: TextButton.styleFrom(
-                      backgroundColor: Colors.grey,
-                    ),
-                    child: const Text(
-                      "reset",
-                      style: TextStyle(fontSize: 25, color: Colors.black),
-                    ),
+                //Break
+                Container(
+                  height: 72,
+                  decoration: const BoxDecoration(
+                      // color: Colors.brown,
+                      ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Column(
+                        children: [
+                          TextButton(
+                            onPressed: () {},
+                            style: TextButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              minimumSize: const Size(120, 10),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                            ),
+                            child: const Text(
+                              "تراجع",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Container(
+                        margin: const EdgeInsets.symmetric(horizontal: 40),
+                        child: Column(
+                          children: [
+                            Image.asset(
+                              "assets/images/sa.png",
+                              width: 60,
+                              height: 60,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          TextButton(
+                            onPressed: () {},
+                            style: TextButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              minimumSize: const Size(120, 10),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                            ),
+                            child: const Text(
+                              "صكة جديدة",
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ],
